@@ -1,25 +1,107 @@
-# Responsive-Desgin
-# My Responsive Web Page
+-------- index.html ---------
 
-## Description
-This project is a fully responsive web page that demonstrates the principles of responsive design using HTML, CSS, and JavaScript. The page adjusts its layout and styling based on the screen size to provide an optimal viewing experience across devices (desktop, tablet, and mobile).
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Design</title>
+</head>
+<body>
+    <header>
+        <h1>My Responsive Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>Content for section 1.</p>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>Content for section 2.</p>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>Content for section 3.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Responsive Page</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+---------  style.css -----------
 
-## Technologies Used
-- **HTML**: For the structure of the web page.
-- **CSS**: For styling and layout, including media queries for responsiveness.
-- **JavaScript**: For any interactive elements .
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-## Features
-- Responsive navigation menu that adapts to different screen sizes.
-- Sections with content that adjust layout based on the viewport.
-- Clean and maintainable code structure.
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
 
-## How to View the Project
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/minakshi908/Responsive-Desgin.git
-2. Navigate to the project directory:
-   cd Responsive-Desgin
-3. Open the index.html file in your web browser:
- open index.html
-4. Resize your browser window or use Developer Tools to test responsiveness.
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 0.8rem;
+    }
+}
+-------  script.js ---------
+ 
+ document.addEventListener('DOMContentLoaded', () => {
+    // Example: Add functionality here if needed
+});
