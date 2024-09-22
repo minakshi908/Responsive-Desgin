@@ -100,6 +100,39 @@ footer {
         font-size: 0.8rem;
     }
 }
+ /* Basic Styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    /* Responsive Layout - Adjust breakpoints as needed */
+    @media screen and (min-width: 600px) {
+      section {
+        /* For tablets and larger screens */
+        float: left;
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      section {
+        /* For larger desktops */
+        width: 33.33%;
+      }
+    }
+  
 -------  script.js ---------
  
  document.addEventListener('DOMContentLoaded', () => {
